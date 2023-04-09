@@ -22,6 +22,11 @@ public class UnifiedApplication {
         textEditor.createTextEditorGUI();
         tabbedPane.addTab("Text Editor", textEditor);
 
+        // Add the to-do list to the third tab
+        ToDoList toDoList = new ToDoList();
+        toDoList.createToDoListGUI();
+        tabbedPane.addTab("To-Do List", toDoList);
+
         frame.add(tabbedPane);
         frame.setVisible(true);
     }
